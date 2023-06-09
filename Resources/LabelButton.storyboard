@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rCP-QP-0gl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Label Button-->
+        <scene sceneID="U1S-T0-Ftk">
+            <objects>
+                <tableViewController storyboardIdentifier="LabelButtonViewController" title="Label Button" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rCP-QP-0gl" customClass="LabelButtonViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" id="PDd-vN-zq9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="BDS-UD-eM5">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="336" id="TRa-Tq-5Kf">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="336"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TRa-Tq-5Kf" id="f7g-rb-Pk5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="336"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p7q-ME-A5S">
+                                                    <rect key="frame" x="20" y="11" width="374" height="314"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5a7-vY-Rbh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="52.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk0-BI-1q9" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="sdd-r1-Kkw"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBQ-qN-Hpr" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="Hb3-HU-Kat"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBK-Jw-8NI" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="ZYi-zP-5Tf"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c1v-rY-5vk">
+                                                            <rect key="frame" x="0.0" y="52.5" width="374" height="52"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3n-ff-DBy" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="4J9-cV-0Ve"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKd-E4-k1L" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="g1J-C3-n4G"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UVC-4M-u9a" customClass="Contained40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="FR8-q9-DgP"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ufw-mc-VrI">
+                                                            <rect key="frame" x="0.0" y="104.5" width="374" height="52.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOe-Yf-nzO" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="cKR-31-tiu"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwV-GP-pkP" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15.5" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="QSa-vL-ewo"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdl-L2-X2U" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14.5" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="wlK-aN-Suj"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Gj-Tw-0wx">
+                                                            <rect key="frame" x="0.0" y="157" width="374" height="52.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn7-aM-YQF" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="LDI-Ac-sSe"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vP-pf-t5q" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="bjW-D9-LxJ"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8m-Q8-giv" customClass="Outlined40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="eMl-yj-vb0"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-rs-24y">
+                                                            <rect key="frame" x="0.0" y="209.5" width="374" height="52"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6r-kU-ieW" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="45D-Gr-kA1"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPm-QK-aTo" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="OV0-vd-LBm"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsD-UK-4Yz" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="kxv-9g-roc"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e0e-Ch-KHc">
+                                                            <rect key="frame" x="0.0" y="261.5" width="374" height="52.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uS2-FC-Jkt" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="9.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="p6v-O6-8c1"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TS2-vz-jYe" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="15.5" width="82" height="22"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="6V5-Bx-3lm"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_review_more"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2TM-nF-fyO" customClass="Text40LabelButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="14.5" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="primary_a"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="YdJ-4r-kaY"/>
+                                                                    </constraints>
+                                                                    <color key="tintColor" name="primary_a"/>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Label" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="primary_a"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="9Gj-Tw-0wx" secondAttribute="trailing" id="DJi-SH-fog"/>
+                                                        <constraint firstItem="5a7-vY-Rbh" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="Dee-Xu-LKO"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Sbm-rs-24y" secondAttribute="trailing" id="IR8-nW-adW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="e0e-Ch-KHc" secondAttribute="trailing" id="LH0-PD-2Tu"/>
+                                                        <constraint firstItem="c1v-rY-5vk" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="Sbr-cz-IhP"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ufw-mc-VrI" secondAttribute="trailing" id="ZQU-ET-k5N"/>
+                                                        <constraint firstAttribute="trailing" secondItem="c1v-rY-5vk" secondAttribute="trailing" id="Zjx-yv-XMp"/>
+                                                        <constraint firstItem="e0e-Ch-KHc" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="gBf-nb-8CX"/>
+                                                        <constraint firstItem="Sbm-rs-24y" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="hQF-ak-veh"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5a7-vY-Rbh" secondAttribute="trailing" id="jv5-Cr-xZX"/>
+                                                        <constraint firstItem="ufw-mc-VrI" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="qAR-Pw-MAd"/>
+                                                        <constraint firstItem="9Gj-Tw-0wx" firstAttribute="leading" secondItem="p7q-ME-A5S" secondAttribute="leading" id="qkK-Yx-GW7"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="p7q-ME-A5S" secondAttribute="bottom" id="beG-ns-ksV"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="p7q-ME-A5S" secondAttribute="trailing" id="hnT-fb-smM"/>
+                                                <constraint firstItem="p7q-ME-A5S" firstAttribute="top" secondItem="f7g-rb-Pk5" secondAttribute="topMargin" id="lFO-cr-drZ"/>
+                                                <constraint firstItem="p7q-ME-A5S" firstAttribute="leading" secondItem="f7g-rb-Pk5" secondAttribute="leadingMargin" id="ruk-mG-XlZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="e0n-Np-6ZF">
+                                        <rect key="frame" x="0.0" y="386" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e0n-Np-6ZF" id="1gO-5E-m24">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="primary_a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twe-wV-e9A">
+                                                    <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="twe-wV-e9A" secondAttribute="trailing" id="0ZM-2C-k3g"/>
+                                                <constraint firstItem="twe-wV-e9A" firstAttribute="leading" secondItem="1gO-5E-m24" secondAttribute="leadingMargin" id="NCT-w4-oVI"/>
+                                                <constraint firstItem="twe-wV-e9A" firstAttribute="centerY" secondItem="1gO-5E-m24" secondAttribute="centerY" id="vgN-o8-vhw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hhu-jp-7GF">
+                                        <rect key="frame" x="0.0" y="436" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hhu-jp-7GF" id="PBK-xN-8hc">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8TN-9J-8Pk">
+                                                    <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="8TN-9J-8Pk" firstAttribute="leading" secondItem="PBK-xN-8hc" secondAttribute="leadingMargin" id="H2g-CS-dqn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8TN-9J-8Pk" secondAttribute="trailing" id="V2d-FP-3TG"/>
+                                                <constraint firstItem="8TN-9J-8Pk" firstAttribute="centerY" secondItem="PBK-xN-8hc" secondAttribute="centerY" id="hX0-0a-LGi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="jef-ad-5JB" style="IBUITableViewCellStyleDefault" id="Cl5-fG-pHK">
+                                        <rect key="frame" x="0.0" y="486" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cl5-fG-pHK" id="yfd-2a-5f6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Enable Toggle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jef-ad-5JB">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rCP-QP-0gl" id="BqI-IE-6ow"/>
+                            <outlet property="delegate" destination="rCP-QP-0gl" id="82K-tV-qc6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Label Button" id="s5h-Mw-1Ss"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="twe-wV-e9A" id="qrV-ac-RxM"/>
+                        <outlet property="containedLabelButton" destination="Kk0-BI-1q9" id="Y5a-px-hW9"/>
+                        <outlet property="containedLabelDisabledButton" destination="r3n-ff-DBy" id="rZa-3u-Sca"/>
+                        <outlet property="containedLeftIconLabelButton" destination="tBK-Jw-8NI" id="t5B-Zd-Z2k"/>
+                        <outlet property="containedLeftIconLabelDisabledButton" destination="UVC-4M-u9a" id="dyC-U8-Zz5"/>
+                        <outlet property="containedRightIconLabelButton" destination="IBQ-qN-Hpr" id="pKo-ug-Ya4"/>
+                        <outlet property="containedRightIconLabelDisabledButton" destination="aKd-E4-k1L" id="4sP-x8-xc3"/>
+                        <outlet property="heightLabel" destination="8TN-9J-8Pk" id="E6Y-5U-fJs"/>
+                        <outlet property="outlinedLabelButton" destination="DOe-Yf-nzO" id="hO1-sY-eF2"/>
+                        <outlet property="outlinedLabelDisabledButton" destination="Dn7-aM-YQF" id="93A-Yw-bXP"/>
+                        <outlet property="outlinedLeftIconLabelButton" destination="Rdl-L2-X2U" id="SZy-zh-U86"/>
+                        <outlet property="outlinedLeftIconLabelDisabledButton" destination="t8m-Q8-giv" id="4nL-fd-kqy"/>
+                        <outlet property="outlinedRightIconLabelButton" destination="TwV-GP-pkP" id="5NF-Hf-EaC"/>
+                        <outlet property="outlinedRightIconLabelDisabledButton" destination="9vP-pf-t5q" id="681-Fx-bUB"/>
+                        <outlet property="textLabelButton" destination="b6r-kU-ieW" id="8Uj-jT-2kf"/>
+                        <outlet property="textLabelDisabledButton" destination="uS2-FC-Jkt" id="ifm-Fl-ADL"/>
+                        <outlet property="textLeftIconLabelButton" destination="IsD-UK-4Yz" id="MeC-xB-KkC"/>
+                        <outlet property="textLeftIconLabelDisabledButton" destination="2TM-nF-fyO" id="Glo-us-caG"/>
+                        <outlet property="textRightIconLabelButton" destination="TPm-QK-aTo" id="wXo-dn-Gzw"/>
+                        <outlet property="textRightIconLabelDisabledButton" destination="TS2-vz-jYe" id="1ds-dl-C3t"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hf-Dj-ZeA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_review_more" width="12" height="12"/>
+        <image name="ic_ygy_storedatail_popular" width="24" height="24"/>
+        <namedColor name="primary_a">
+            <color red="0.98039215686274506" green="0.0" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

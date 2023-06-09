@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GT1-vn-moW">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chip Button-->
+        <scene sceneID="X9P-mO-cBT">
+            <objects>
+                <tableViewController storyboardIdentifier="ChipButtonViewController" title="Chip Button" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GT1-vn-moW" customClass="ChipButtonViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="50" estimatedRowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" id="Acg-Y0-be2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="fVK-lI-UKb">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="200" id="bY7-ds-BUz">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bY7-ds-BUz" id="pQM-9n-bsi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1gi-9V-zCj">
+                                                    <rect key="frame" x="20" y="11" width="374" height="178"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fpd-bX-0N6">
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="44.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B18-Zp-cEI" customClass="Contained40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="5YT-Hz-cGF"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQM-U7-Yjs" customClass="Outlined40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="6pd-hX-MoT"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krJ-e3-ivI" customClass="Text40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="eqS-1P-CnE"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4yx-jF-n1V">
+                                                            <rect key="frame" x="0.0" y="44.5" width="374" height="44.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZc-kh-RW9" customClass="Contained40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="10.5" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="xar-xI-j2K"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-gY-3P3" customClass="Outlined40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="10.5" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="QDM-LQ-g7a"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTM-ke-fct" customClass="Text40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="10.5" width="82" height="24"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="za4-jU-AnO"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_ygy_storedatail_popular"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W5p-yA-Io3">
+                                                            <rect key="frame" x="0.0" y="89" width="374" height="44.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-gs-1Ae" customClass="Contained40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="6.5" width="82" height="32"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="QxO-kA-jTa"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_mart_categoryall_arrowdown_l_gray"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmO-5v-30u" customClass="Outlined40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="6.5" width="82" height="32"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="sDI-qQ-gTs"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_mart_categoryall_arrowdown_l_gray"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXV-Tu-dbI" customClass="Text40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="6.5" width="82" height="32"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="7AD-RB-g0q"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼" image="ic_mart_categoryall_arrowdown_l_gray"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRightIcon" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FWe-lp-gEz">
+                                                            <rect key="frame" x="0.0" y="133.5" width="374" height="44.5"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vES-C3-OLm" customClass="Contained40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="WTO-Kf-tRx"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sJx-W6-DZc" customClass="Outlined40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="146" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="7go-Dc-WwO"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXV-bw-Is4" customClass="Text40ChipButton" customModuleProvider="target">
+                                                                    <rect key="frame" x="292" y="5.5" width="82" height="34"/>
+                                                                    <color key="backgroundColor" name="accent"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="82" id="2Do-VY-Yvr"/>
+                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                    <state key="normal" title="Chip 버튼"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="string" keyPath="color" value="gray_c"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </button>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="4yx-jF-n1V" secondAttribute="trailing" id="14e-3N-BKt"/>
+                                                        <constraint firstItem="W5p-yA-Io3" firstAttribute="leading" secondItem="1gi-9V-zCj" secondAttribute="leading" id="4Xz-YZ-KpY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="fpd-bX-0N6" secondAttribute="trailing" id="6bS-1h-pWk"/>
+                                                        <constraint firstAttribute="trailing" secondItem="W5p-yA-Io3" secondAttribute="trailing" id="9vp-nu-g9d"/>
+                                                        <constraint firstItem="FWe-lp-gEz" firstAttribute="leading" secondItem="1gi-9V-zCj" secondAttribute="leading" id="NNP-Rg-6To"/>
+                                                        <constraint firstItem="fpd-bX-0N6" firstAttribute="leading" secondItem="1gi-9V-zCj" secondAttribute="leading" id="P6B-em-M8L"/>
+                                                        <constraint firstItem="4yx-jF-n1V" firstAttribute="leading" secondItem="1gi-9V-zCj" secondAttribute="leading" id="XXT-6f-nHT"/>
+                                                        <constraint firstAttribute="trailing" secondItem="FWe-lp-gEz" secondAttribute="trailing" id="t3k-zR-dqe"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1gi-9V-zCj" firstAttribute="top" secondItem="pQM-9n-bsi" secondAttribute="topMargin" id="EI8-MC-JBE"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1gi-9V-zCj" secondAttribute="trailing" id="TVD-4d-4kR"/>
+                                                <constraint firstItem="1gi-9V-zCj" firstAttribute="leading" secondItem="pQM-9n-bsi" secondAttribute="leadingMargin" id="iLh-ch-FYK"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1gi-9V-zCj" secondAttribute="bottom" id="pk5-UL-JnT"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xbu-1A-jgO">
+                                        <rect key="frame" x="0.0" y="250" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xbu-1A-jgO" id="hGd-Iw-TFI">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gray_c" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ9-5s-yVd">
+                                                    <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BZ9-5s-yVd" firstAttribute="leading" secondItem="hGd-Iw-TFI" secondAttribute="leadingMargin" id="sSk-cG-NVo"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="BZ9-5s-yVd" secondAttribute="trailing" id="vJI-Fv-LXg"/>
+                                                <constraint firstItem="BZ9-5s-yVd" firstAttribute="centerY" secondItem="hGd-Iw-TFI" secondAttribute="centerY" id="zoJ-uQ-gbC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="y2w-K4-fes">
+                                        <rect key="frame" x="0.0" y="300" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y2w-K4-fes" id="oG9-OF-je9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 Size" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jh-iR-a7d">
+                                                    <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="6Jh-iR-a7d" firstAttribute="centerY" secondItem="oG9-OF-je9" secondAttribute="centerY" id="4JR-mv-BiE"/>
+                                                <constraint firstItem="6Jh-iR-a7d" firstAttribute="leading" secondItem="oG9-OF-je9" secondAttribute="leadingMargin" id="j0E-D0-5bY"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6Jh-iR-a7d" secondAttribute="trailing" id="x5k-HE-pM6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gbh-ik-5Uz">
+                                        <rect key="frame" x="0.0" y="350" width="414" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gbh-ik-5Uz" id="hHl-M8-65y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7L1-ao-Mab">
+                                                    <rect key="frame" x="20" y="15" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7L1-ao-Mab" firstAttribute="centerY" secondItem="hHl-M8-65y" secondAttribute="centerY" id="Ge5-g7-DdM"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="7L1-ao-Mab" secondAttribute="trailing" id="Hgw-dR-0KD"/>
+                                                <constraint firstItem="7L1-ao-Mab" firstAttribute="leading" secondItem="hHl-M8-65y" secondAttribute="leadingMargin" id="VlZ-ww-Mlu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="GT1-vn-moW" id="a6p-W8-7Fx"/>
+                            <outlet property="delegate" destination="GT1-vn-moW" id="uMu-qD-1H0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Chip Button" id="mDe-GM-b3u"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="BZ9-5s-yVd" id="GEe-WB-Sxo"/>
+                        <outlet property="containedChipButton" destination="B18-Zp-cEI" id="esq-l6-L8S"/>
+                        <outlet property="containedLeftIconChipButton" destination="eZc-kh-RW9" id="s2b-CB-vWT"/>
+                        <outlet property="containedRightIconChipButton" destination="dbV-gs-1Ae" id="pKJ-ac-vXp"/>
+                        <outlet property="disabledContainedChipButton" destination="vES-C3-OLm" id="Igs-Tq-Jbm"/>
+                        <outlet property="disabledOutlinedChipButton" destination="sJx-W6-DZc" id="d9Y-0N-89X"/>
+                        <outlet property="disabledTextChipButton" destination="jXV-bw-Is4" id="kgM-xD-2hW"/>
+                        <outlet property="heightLabel" destination="6Jh-iR-a7d" id="jZB-AB-ZCk"/>
+                        <outlet property="iconLabel" destination="7L1-ao-Mab" id="7jH-Lo-Sop"/>
+                        <outlet property="outlinedChipButton" destination="hQM-U7-Yjs" id="SyJ-no-7Im"/>
+                        <outlet property="outlinedLeftIconChipButton" destination="xNB-gY-3P3" id="3Tx-qt-xEw"/>
+                        <outlet property="outlinedRightIconChipButton" destination="EmO-5v-30u" id="I4i-zW-cSk"/>
+                        <outlet property="textChipButton" destination="krJ-e3-ivI" id="F1N-Ca-clL"/>
+                        <outlet property="textLeftIconChipButton" destination="pTM-ke-fct" id="h7c-Yi-9nA"/>
+                        <outlet property="textRightIconChipButton" destination="AXV-Tu-dbI" id="xlh-yr-SVL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PcT-qC-i9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_mart_categoryall_arrowdown_l_gray" width="32" height="32"/>
+        <image name="ic_ygy_storedatail_popular" width="24" height="24"/>
+        <namedColor name="accent">
+            <color red="0.047058823529411764" green="0.50196078431372548" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
